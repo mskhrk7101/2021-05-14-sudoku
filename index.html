@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 数独</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>数独</h1>
+        <div>
+            <h2>メッセージ</h2>
+            <div id="message">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div>
+                <label>問題選択</label>
+                <select id="selector" id="form-control">
+                    <option value="0">問題1</option>
+                    <option value="1">問題2</option>
+                    <option value="2">問題3</option>
+                </select>
+            </div>
+            <div>
+                <textarea name="input" id="input" cols="9" rows="9"></textarea>
+                <button id='solve' class="btn btn-primary">スタート</button>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <table id="viewer">
+                <tbody>
+                    <tr>
+                        <td id="1-1" />
+                        <td id="1-2" />
+                        <td id="1-3" class="right-line" />
+                        <td id="1-4" />
+                        <td id="1-5" />
+                        <td id="1-6" class="right-line" />
+                        <td id="1-7" />
+                        <td id="1-8" />
+                        <td id="1-9" />
+                    </tr>
+                    <tr>
+                        <td id="2-1" />
+                        <td id="2-2" />
+                        <td id="2-3" class="right-line" />
+                        <td id="2-4" />
+                        <td id="2-5" />
+                        <td id="2-6" class="right-line" />
+                        <td id="2-7" />
+                        <td id="2-8" />
+                        <td id="2-9" />
+                    </tr>
+                    <tr>
+                        <td id="3-1" class="bottom-line" />
+                        <td id="3-2" class="bottom-line" />
+                        <td id="3-3" class="bottom-line right-line" />
+                        <td id="3-4" class="bottom-line" />
+                        <td id="3-5" class="bottom-line" />
+                        <td id="3-6" class="bottom-line right-line" />
+                        <td id="3-7" class="bottom-line" />
+                        <td id="3-8" class="bottom-line" />
+                        <td id="3-9" class="bottom-line" />
+                    </tr>
+                    <tr>
+                        <td id="4-1" />
+                        <td id="4-2" />
+                        <td id="4-3" class="right-line" />
+                        <td id="4-4" />
+                        <td id="4-5" />
+                        <td id="4-6" class="right-line" />
+                        <td id="4-7" />
+                        <td id="4-8" />
+                        <td id="4-9" />
+                    </tr>
+                    <tr>
+                        <td id="5-1" />
+                        <td id="5-2" />
+                        <td id="5-3" class="right-line" />
+                        <td id="5-4" />
+                        <td id="5-5" />
+                        <td id="5-6" class="right-line" />
+                        <td id="5-7" />
+                        <td id="5-8" />
+                        <td id="5-9" />
+                    </tr>
+                    <tr>
+                        <td id="6-1" class="bottom-line" />
+                        <td id="6-2" class="bottom-line" />
+                        <td id="6-3" class="bottom-line right-line" />
+                        <td id="6-4" class="bottom-line" />
+                        <td id="6-5" class="bottom-line" />
+                        <td id="6-6" class="bottom-line right-line" />
+                        <td id="6-7" class="bottom-line" />
+                        <td id="6-8" class="bottom-line" />
+                        <td id="6-9" class="bottom-line" />
+                    </tr>
+                    <tr>
+                        <td id="7-1" />
+                        <td id="7-2" />
+                        <td id="7-3" class="right-line" />
+                        <td id="7-4" />
+                        <td id="7-5" />
+                        <td id="7-6" class="right-line" />
+                        <td id="7-7" />
+                        <td id="7-8" />
+                        <td id="7-9" />
+                    </tr>
+                    <tr>
+                        <td id="8-1" />
+                        <td id="8-2" />
+                        <td id="8-3" class="right-line" />
+                        <td id="8-4" />
+                        <td id="8-5" />
+                        <td id="8-6" class="right-line" />
+                        <td id="8-7" />
+                        <td id="8-8" />
+                        <td id="8-9" />
+                    </tr>
+                    <tr>
+                        <td id="9-1" />
+                        <td id="9-2" />
+                        <td id="9-3" class="right-line" />
+                        <td id="9-4" />
+                        <td id="9-5" />
+                        <td id="9-6" class="right-line" />
+                        <td id="9-7" />
+                        <td id="9-8" />
+                        <td id="9-9" />
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+    </script>
+</body>
+
+</html>

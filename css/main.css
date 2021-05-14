@@ -1,0 +1,35 @@
+h2{
+    font-size: 16px;
+}
+pre{
+    white-space: pre-wrap;
+}
+#input{
+    margin-top: 20px;
+    width: 100px;
+    height: 200px;
+}
+#solve{
+    margin-top: 20px;
+    vertical-align: top;
+}
+#message{
+    min-height: 30px;
+}
+#viewer{
+    margin-top: 10px;
+}
+#viewer td{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid;
+}
+
+#viewer td.bottom-line{
+    border-bottom: 3px solid;
+}
+#viewer td.right-line{
+    border-right: 3px solid;
+}
